@@ -16,6 +16,8 @@ export const showModal = async(id) =>{
 
     if(!id) return;
     const user = await getUserById(id);
+    console.log('Usuario cargado:', user);
+    setFormValues(user);
 }
 
 export const hideModal = () =>{
